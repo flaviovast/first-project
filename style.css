@@ -1,0 +1,29 @@
+:root{
+    --background-color: #ccc;
+    --font: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--font);
+
+}
+
+.box{
+    background-color: #ccc;
+    width: 300px;
+    height: 90vh;
+
+}
+
+.box2{
+    background-color: #ccc;
+    width: 300px;
+    height: 10vh;
+
+}
