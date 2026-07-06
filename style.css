@@ -5,25 +5,54 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-body{
-    box-sizing: border-box;
-    margin: 0px;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    background-color: var(--background-color);
-    color: var(--font);
+nav{ background-color: #ccc; 
+display: flex;
+justify-content: space-between;
+height: 80px;
+align-items: center; 
+padding left: 20px;
+padding-right: 20px;
+max-width: 1000px;
+margin: auto;}
 
+nav .logo { 
+background-color: #999;
+width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-size: 36px;
 }
 
-.box{
-    background-color: #ccc;
-    width: 300px;
-    height: 90vh;
-
+nav ul {background-color;
+    margin; 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav .botoes {
+    display: none;
+}
+nav .botoes button {
+    BACKGROUND-COLOR: #333;
+color: #fff;
+padding: 10px 15px 10px 15px;
+border:0;
 }
 
-.box2{
-    background-color: #ccc;
-    width: 300px;
-    height: 10vh;
+nav .botoes .cadastro {display: none;
+}
 
+@media (width > 700px) {
+    nav .botoes .cadastro {
+        display: inline;
+    }
+}
+@media (width > 500px) {
+   nav .botoes {
+    display: block;
+}
 }
