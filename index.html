@@ -1,29 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <a class="logo" href="#" aria-label="Início">F</a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#funcionalidades">Sobre</a></li>
+          <li><a href="#cta">Contato</a></li>
+        </ul>
+        <a class="button button-dark" href="#">Baixar o App</a>
+      </nav>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>your mom</title>
-    <link href="style.css" rel="stylesheet"/>
- </head>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">App fitness inteligente</p>
+          <h1>O app perfeito para acompanhar sua vida fitness</h1>
+          <p class="hero-text">
+            Planeje treinos, acompanhe metas e mantenha sua rotina em equilíbrio.
+          </p>
+          <a class="button button-primary" href="#">Começar grátis</a>
+        </div>
 
-<body>
-    
-    <nav>
-        <div class="logo">M</div>
-        <ul>
-         <li>Home</li>
-         <li>sobre </li>
-         <li>contato</li>
-            
-    </ul>
-    <div class="botoes">
-        <button>login</button>
-        <button class="cadastro">cadastro</button>
-    </div>
+        <div class="hero-visual">
+          <img
+            src="Images/fitness.jpeg"
+            alt="Tela do aplicativo fitness mostrando acompanhamento de treino"
+          />
+        </div>
 
-    </nav>
-     
+        <div class="hero-highlights">
+          <ul>
+            <li>❤️ Saúde</li>
+            <li>🏃 Exercício</li>
+            <li>🤝 Amigos</li>
+          </ul>
+        </div>
+      </section>
+    </header>
 
+    <main>
+      <section class="features" id="funcionalidades">
+        <div class="section-heading">
+          <p class="eyebrow">Funcionalidades</p>
+          <h2>Seu treino, sua rotina e seus objetivos em um só lugar</h2>
+        </div>
+
+        <article class="feature-item">
+          <div class="feature-media">
+            <img src="Images/fitness 2.jpeg" alt="Detalhes do treino no aplicativo" />
+          </div>
+          <div class="feature-copy">
+            <h3>Treinos claros e fáceis de seguir</h3>
+            <p>
+              Organize exercícios, acompanhe seu progresso e mantenha a motivação em cada etapa.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-item feature-item--reverse">
+          <div class="feature-media">
+            <img src="Images/fitness 3.webp" alt="Caminhada ao ar livre no aplicativo" />
+          </div>
+          <div class="feature-copy">
+            <h3>Rotina ativa todos os dias</h3>
+            <p>
+              Receba lembretes, acompanhe caminhadas e transforme pequenos hábitos em grandes resultados.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-item">
+          <div class="feature-media">
+            <img src="Images/fitness 4.png" alt="Contador de calorias no aplicativo" />
+          </div>
+          <div class="feature-copy">
+            <h3>Controle seu consumo e metas</h3>
+            <p>
+              Monitore calorias, acompanhe evolução e mantenha o equilíbrio entre treino e alimentação.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="cta-section" id="cta">
+        <div class="cta-card">
+          <p class="eyebrow">Comece hoje</p>
+          <h2>Baixe o app e transforme a sua rotina</h2>
+          <p>
+            Descubra uma experiência simples, leve e totalmente gratuita para manter sua saúde em dia.
+          </p>
+          <a class="button button-primary" href="#">Baixar agora</a>
+          <p class="cta-note">Totalmente gratuito</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Todos os direitos reservados</p>
+    </footer>
+  </body>
 </html>

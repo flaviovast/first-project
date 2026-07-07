@@ -1,0 +1,51 @@
+# Projeto de landing page para app fitness
+
+pagina com fundo branco e fonte roboto como principal
+o objetivo e ter uma landing page clean, branca e sofisticada.
+
+## Secao header:
+
+logo no canto esquerdo
+a logo e umF em um circulo (feito com CSS)
+o fundo do circulo e verde escuro
+
+botao de download no canto direito
+
+## hero section
+
+a hero deve ter altura 90vh, dividido em 3 areas horizontais
+
+esquerda:
+apenas headline, sem ser grande demais, sem destaque ( o destaque e o print do app no meio)
+"O app perfeito para acompanhar sua vida fitness"
+
+centro:
+em destaque a imagem fitness.jpeg que e um print do app.
+
+direita:
+uma lista de pontos chave sobre o app
+- ❤️ Saude 
+- 🏃Exercicio
+- 🤷‍♂️ Amigos
+
+## secao de funcionalidades:
+
+vao ser usadas as images fitness 2, fitness 3, fitness 4 que serao exibidas da segunte forma:
+print / texto
+texto / print
+print / texto
+
+ou seja alternando entre o print na esquerda e um texto explicativo na direita
+
+descrisao dos prints para voce gerar um texto adequado:
+-print 2 detalhes do Exercicio
+-print 3 caminhada ao ar livre
+- print 4 contagem de calorias
+
+## secao de cta (call to action):
+
+botao grande de download com um texto abaixo dele destacando:
+"Totalmente gratuito"
+
+## secao de Rodape:
+apenas com o texto "todos os direitos reservados"
