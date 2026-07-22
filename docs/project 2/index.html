@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list simples</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <h1>Lista de tarefas</h1>
+        <form id="task-form" class="task-form">
+          <input
+            id="task-input"
+            type="text"
+            placeholder="Digite uma tarefa"
+            aria-label="Nova tarefa"
+          />
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <ul id="task-list" class="task-list"></ul>
+      </section>
+    </main>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
