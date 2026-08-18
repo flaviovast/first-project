@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Repositórios GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Repositórios GitHub</h1>
+        
+        <!-- Search Card -->
+        <div class="search-card">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Digite o termo de busca e pressione ENTER..."
+                class="search-input"
+            >
+        </div>
+
+        <!-- Results Container -->
+        <div id="resultsContainer" class="results-container hidden">
+            <!-- Loading State -->
+            <div id="loadingState" class="state-message loading hidden">
+                <p>Carregando resultados...</p>
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="state-message empty hidden">
+                <p>Nenhum repositório encontrado. Tente outro termo de busca.</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorState" class="state-message error hidden">
+                <p id="errorMessage">Ocorreu um erro ao buscar repositórios. Tente novamente.</p>
+            </div>
+
+            <!-- Results List -->
+            <div id="resultsList" class="results-card hidden">
+                <!-- Results will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
