@@ -153,6 +153,7 @@ function createRepositoryElement(repo) {
     const description = repo.description || 'Sem descrição disponível.';
     const language = repo.language || 'Desconhecida';
     const stars = repo.stargazers_count;
+    const forks = repo.forks_count;
 
     // Language color
     const languageColor = languageColors[language] || '#8b949e';
@@ -172,11 +173,14 @@ function createRepositoryElement(repo) {
                 <span>${language}</span>
             </div>
             <div class="meta-item stars">
-                ⭐ ${formatNumber(stars)} stars
+                <svg class="meta-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 10 5.6l4.5.65-3.25 3.18.77 4.48L8 11.8l-4.02 2.11.77-4.48L1.5 6.25 6 5.6 8 1.5Z"/></svg>
+                ${formatNumber(stars)} stars
             </div>
-            <div class="meta-item">
-                <a href="${repoUrl}" target="_blank" style="color: #58a6ff; text-decoration: none;">Ver no GitHub →</a>
+            <div class="meta-item forks">
+                <svg class="meta-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3.5a2 2 0 1 1-1.5 1.94V10A2.5 2.5 0 0 0 6 12.5h1.5a2 2 0 0 1 4 0 2 2 0 1 1-1.5-1.94V8A2.5 2.5 0 0 0 7.5 5.5H6a2 2 0 0 1-1-2Z"/></svg>
+                ${formatNumber(forks)} forks
             </div>
+            <a class="repo-link" href="${repoUrl}" target="_blank" rel="noopener noreferrer">Ver no GitHub &rarr;</a>
         </div>
     `;
 
